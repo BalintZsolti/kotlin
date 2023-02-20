@@ -44,6 +44,19 @@ fun main(args: Array<String>) {
         totalArea+=rectangles[i].area()
     }
 
-    println("Total area of the rectangles: $totalArea")
+    println("Total area of the rectangles: $totalArea\n")
 
+    println(DateUtil.isValidDate(-123111,2,30)==true);
+    println(DateUtil.isValidDate(2000,2, 29) == true);
+    println(DateUtil.isValidDate(2000,2, 30) == false);
+    println(DateUtil.isValidDate(1900,2, 29) == false);
+    println(DateUtil.isValidDate(1900,2, 28) == true);
+    println(DateUtil.isValidDate(-1900,2, 28) == false);
+    println(DateUtil.isValidDate(0,2, 28) == false);
+    println(DateUtil.isValidDate(2021,2, 29) == false);
+    println(DateUtil.isValidDate(2020,2, 29) == true);
+    println(DateUtil.isValidDate(2020,1, 32) == false);
+    println(DateUtil.isValidDate(2020,1, 0) == false);
+    println(DateUtil.isValidDate(2020,0, 0) == false);
+    println(DateUtil.isValidDate(2020,4, 31) == false);
 }
