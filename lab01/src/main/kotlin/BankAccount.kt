@@ -1,8 +1,11 @@
 class BankAccount(accountNumber : String , balance : Double) {
    private var balance: Double = balance
-   private val accountNumber: String = accountNumber
+   private var accountNumber: String = accountNumber
 
-
+     init{
+        this.balance=balance;
+         this.accountNumber=accountNumber;
+     }
     constructor(accountNumber: String) : this(accountNumber, 0.0)
     fun getAccountNumber(): String {
         return accountNumber
