@@ -1,9 +1,6 @@
 package lab3_1
 
-class BankAccount(accountNumber : String , balance : Double) {
-    private var balance: Double = balance
-    private var accountNumber: String = accountNumber
-
+class BankAccount(private var accountNumber : String ,private var balance : Double) {
     init{
         this.balance=balance;
         this.accountNumber=accountNumber;

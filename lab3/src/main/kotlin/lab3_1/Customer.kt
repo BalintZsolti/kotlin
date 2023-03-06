@@ -1,8 +1,6 @@
 package lab3_1
 
-class Customer(firstName : String , lastName : String ) {
-    private var firstName : String
-    private var lastName : String
+class Customer(private var firstName : String ,private var lastName : String ) {
     private var account : BankAccount = BankAccount("",0.0);
 
     init{
